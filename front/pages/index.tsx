@@ -1,4 +1,5 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 const Home: React.FC = () => {
   const getHomes = () => {
@@ -14,4 +15,8 @@ const Home: React.FC = () => {
   return <div>Hello World!</div>;
 };
 
-export default Home;
+const DynamicComponentWithNoSSR = dynamic(() => Promise.resolve(Home), {
+  ssr: false,
+});
+
+export default () => <DynamicComponentWithNoSSR />;
