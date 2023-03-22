@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "export": "strapi export -f strapi-export -k alma",
-    "import": "strapi import -f strapi-export.tar.gz.enc -k alma"
+    "import": "strapi import -f strapi-export.tar.gz.enc -k alma --force"
   },
   "devDependencies": {},
   "dependencies": {
