@@ -5,6 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop",
+    "dev:admin": "strapi develop --watch-admin",
     "start": "strapi start",
     "build": "strapi build",
     "export": "strapi export -f strapi-export -k alma",
